@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to CSS file -->
+    <link rel="stylesheet" href="datahacks.css">
+    <title>Kill Keyboard|HOME</title>
+</head>
+
+<body>
+
+
+    <!-- Nav Bar -->
+    <div class="sticky">
+        <nav class="navbar">
+        
+            <div class="logo"><img src="logo.svg" width="320px" height="150px"></div>
+            <!-- Menu for navigation -->
+            <ul class="nav-links">
+                <!-- check box Hack -->
+                <input type="checkbox" id="checkbox_toggle" />
+                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                <!-- Navigation menu -->
+                <div class="menu">
+                    <li><a href="#ley">FAQS</a></li>
+                    <li><a href="#ev">SCHEDULE</a></li>
+                    <li><a href="#dpp">SPONSORS</a></li>
+                    <li><a href="#tee">OUR TEAM</a></li>
+                    <li><a href="mailto:killkeyboard@gmail.com">CONTACT</a></li>
+                </div>
+            </ul>
+        </nav>
+    </div>
+
+
+<script>
+    // navbar element
+    const navbar = document.querySelector('.navbar');
+  
+    // Function for scroll event
+    function handleScroll() {
+     
+      if (window.scrollY > 0) {
+
+        navbar.classList.add('scrolled');
+      } else {
+
+        navbar.classList.remove('scrolled');
+      }
+    }
+  
+    // Add scroll event listener to the window
+    window.addEventListener('scroll', handleScroll);
+  </script>
+  </body>
+  </html>
+  
+
+
+    <!-- Landing section -->
+    <section class="landing">
+        <div id="vanta-canvas" style="display: flex; justify-content: center;">
+            <div class="landing-cont">
+                <br><img src="byte_club.png" width="300px" height="300px" style="border-radius: 150px; ; margin-top: 150px;">
+                <div class="landing-text">
+                    <h5>Presents</h5>
+                    <h2>Hackathon Competition<br>Kill Keyboard</h2><br><br>
+                    <!-- Button for registration -->
+                    <button type="button" class="button">
+                        <a href="coding.html" target="_blank" style="padding: 5px; display: inline-block; text-align: center; color: #5a01a7; font-weight: bold;">Free registration</a>
+                    </button>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Script for Vanta.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.topology.min.js"></script>
+    <script type="text/javascript">
+        VANTA.TOPOLOGY({
+            el: "#vanta-canvas",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            forceAnimate: true,
+            minHeight:800.00,
+            minWidth: 100.00,
+            scale: 1.00,
+            scaleMobile:1,
+            color: 0x553fff,
+            backgroundColor: 0x0,
+            maxDistance: 19.00,
+            spacing: 16.00
+        });
+    </script>
+
+    <!-- Section for prizes and perks -->
+    <section class="landingsec ">
+        <div class="igiz">
+            <h6 align="center">PRIZES & PERKS</h6>
+        </div>
+        <div class="sde">
+            <div class="sdecash">
+                <img src="cash.gif" width="300px" height="300px"><br>
+                <p>Prizes<br>Worth thousands <br>*tnc apply </p><br> <br>
+            </div>
+            <div class="sdegoodies">
+                <img src="gift.gif" width="300px" height="300px"><br><br>
+                <p>Swags, Goodies and more</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section for themes to battle -->
+    <section class="landingtheme ">
+        <p>THEMES TO BATTLE</p>
+        <div class="fp">
+            <!-- Flip card for web development theme -->
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="domain.gif" alt="Ai" style="width:250px;height:200px;">
+                    </div>
+                    <div class="flip-card-back">
+                        <p style="text-shadow:none;">Web development<br>It includes:<br></p> 
+                        <p style="text-shadow:none;">Develop the product as described in a <br>screenshot</p>
+                    </div>
+                </div>
+            </div><br>
+            <!-- Flip card for coding contest theme -->
+            <div class="flip-cardo">
+                <div class="flip-card-innero">
+                    <div class="flip-card-fronto">
+                        <img src="programmer.gif" alt="Ai" style="width:250px;height:200px;">
+                    </div>
+                    <div class="flip-card-backo">
+                        <p style="text-shadow:none;">Coding Contest<br>It includes:<br></p> 
+                        <p style="text-shadow:none;">A Coding contest having 5 questions</p>
+                    </div>
+                </div>
+            </div><br>
+            <!-- Flip card for business plan & prototype theme -->
+            <div class="flip-cardt">
+                <div class="flip-card-innert">
+                    <div class="flip-card-frontt">
+                        <img src="case.gif" alt="Ai" style="width:250px;height:200px;">
+                    </div>
+                    <div class="flip-card-backt" style="text-shadow:none;">
+                        <p style="text-shadow:none;">Business plan & prototype<br>It includes:<br></p> 
+                        <p style="text-shadow:none;">Startup ideas<br> Prototype and presentation</p>
+                    </div>
+                </div>
+            </div><br>
+        </div>
+    </section>
+
+    <!-- Section for judges -->
+    <section class="judges">
+        <div class="igi">
+            <p align="center">JUDGES</p>
+        </div>
+        <div class="sdeone">
+            <!-- Judge 1 -->
+            <div class="sdeocash">
+                <img src="bombang.png" width="200px" height="200px" style="border-radius:50%;padding:20px;"><br>
+                <p style="font-size:small;color:aquamarine;">TBD soon<br>Designation<br>(Company)</p>
+            </div>
+            <!-- Judge 2 -->
+            <div class="sdeogoodies">
+                <img src="bombang.png" width="200px" height="200px" style="border-radius:50%;padding:20px;"><br>
+                <p style="font-size:small;color:aquamarine;">TBD soon<br>Designation<br>(Company)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section for event schedule -->
+    <section class="event" id="ev">
+        <div class="open">
+            <p align="center">EVENT SCHEDULE</p>
+        </div>
+        <!-- Timeline for event schedule -->
+        <div class="timeline">
+            <!-- Event schedule entries -->
+            <div class="container left">
+                <div class="content">
+                    <h2>10TH MAY, 2024</h2>
+                    <p>REGISTRATION BEGINS</p>
+                </div>
+            </div>
+            <div class="container right">
+              <div class="content">
+                <h2>14TH MAY, 2024</h2>
+                <p>REGISTRATION ENDS</p>
+              </div>
+            </div>
+            <div class="container left">
+              <div class="content">
+                <h2>15TH MAY, 2024</h2>
+                <p>BRIEF IDEATHON</p>
+              </div>
+            </div>
+            <div class="container right">
+              <div class="content">
+                <h2>18TH MAY, 2024</h2>
+                <p>PRE-SESSION</p>
+              </div>
+            </div>
+            <div class="container left">
+              <div class="content">
+                <h2>19-20TH MAY, 2024</h2>
+                <p>HACKATHON</p>
+              </div>
+            </div>
+            <div class="container right">
+              <div class="content">
+                <h2>21ST MAY, 2024</h2>
+                <p>RESULTS</p>
+              </div>
+            </div>
+        </div>
+           
+        </div>
+    </section>
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Add your CSS file here -->
+</head>
+<body>
+
+    <!-- Section for Event Heads -->
+    <section class="team" id="tee">
+        <div class="tea">
+            <p style="text-align:center;">EVENT HEADS</p><br>
+        </div>
+        <div class="eventheads">
+            <!-- Event Head 1 -->
+            <div class="aman" style="margin-right:5%">
+                <a href="https://www.linkedin.com/in/Aman-kumar-987654321/"><img src="sdev.png" width="200px" height="200px" style="border-radius:50%;padding:30px;box-shadow: 0 0 2px 3px blue;"></a><br><br>
+                <p style="font-size:small;color:aquamarine;text-align:center">Aman kumar<br></p>
+                <p style="color:grey;font-size: small;text-align:center">Event Head</p><br><br>
+            </div>
+            <!-- Event Head 2 -->
+            <div class="aakash">
+                <a href="#"><img src="raman.jpg" width="200px" height="200px" style="border-radius:50%;padding:30px;box-shadow: 0 0 2px 3px blue;"></a><br><br>
+                <p style="font-size:small;color:aquamarine;text-align:center">Ayush kumar<br></p>
+                <p style="color:grey;font-size: small;text-align:center">Event Head</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section for Core Team -->
+    <section class="coreteam">
+        <div class="core">
+            <p style="text-align:center;">CORE TEAM</p><br>
+        </div>
+        <div class="coremem">
+            <!-- Core Team Member 1 -->
+            <div class="shubham" style="margin-right:5%">
+                <a href="#"><img src="bombang.png" width="200px" height="200px" style="border-radius:50%;padding:30px;box-shadow: 0 0 2px 3px blue;"></a><br><br>
+                <p style="font-size:small;color:aquamarine;text-align:center">TBD<br></p>
+                <p style="color:grey;font-size: small;text-align:center">Core Member</p><br><br>
+            </div>
+            <!-- Core Team Member 2 -->
+            <div class="harshita">
+                <a href="#"><img src="bombang.png" width="200px" height="200px" style="border-radius:50%;padding:30px;box-shadow: 0 0 2px 3px blue;"></a><br><br>
+                <p style="font-size:small;color:aquamarine;text-align:center">TBD<br></p>
+                <p style="color:grey;font-size: small;text-align:center">Core Member</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section for Host -->
+    <section class="coreteam">
+        <div class="core">
+            <p style="text-align:center;">HOSTS</p><br>
+        </div>
+        <div class="coremem">
+            <!-- host 1 -->
+            <div class="shubham" style="margin-right:5%">
+                <a href="#"><img src="bombang.png" width="200px" height="200px" style="border-radius:50%;padding:30px;box-shadow: 0 0 2px 3px blue;"></a><br><br>
+                <p style="font-size:small;color:aquamarine;text-align:center">TBD<br></p>
+                <p style="color:grey;font-size: small;text-align:center">Core Member</p><br><br>
+            </div>
+            <!--  Host 2 -->
+            <div class="harshita">
+                <a href="#"><img src="bombang.png" width="200px" height="200px" style="border-radius:50%;padding:30px;box-shadow: 0 0 2px 3px blue;"></a><br><br>
+                <p style="font-size:small;color:aquamarine;text-align:center">TBD<br></p>
+                <p style="color:grey;font-size: small;text-align:center">Core Member</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Section for Management Team -->
+    <section class="coreteam">
+        <div class="core">
+            <p style="text-align:center;">MANAGEMENT TEAM </p><br>
+        </div>
+        <div class="coremem">
+            <!-- MGMT M 1 -->
+            <div class="shubham" style="margin-right:5%">
+                <a href="#"><img src="bombang.png" width="200px" height="200px" style="border-radius:50%;padding:30px;box-shadow: 0 0 2px 3px blue;"></a><br><br>
+                <p style="font-size:small;color:aquamarine;text-align:center">TBD<br></p>
+                <p style="color:grey;font-size: small;text-align:center">Member</p><br><br>
+            </div>
+            <!-- MGMT M 2 -->
+            <div class="harshita">
+                <a href="#"><img src="bombang.png" width="200px" height="200px" style="border-radius:50%;padding:30px;box-shadow: 0 0 2px 3px blue;"></a><br><br>
+                <p style="font-size:small;color:aquamarine;text-align:center">TBD<br></p>
+                <p style="color:grey;font-size: small;text-align:center">Member</p>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+</html>
+
+
+    <!-- Section for event sponsors -->
+    <section class="sponsor" id="dpp">
+        <p>EVENT SPONSORS</p><br><br><br>
+        <div class="digio" style="display:flex; justify-content:center;">
+            <!-- Sponsor 1: GitHub -->
+            <div class="githublog"> 
+                <a href=""><img src="o7.png"width="380px" height="100px" style="padding-right:40px"></a>
+            </div>
+          
+        </div>
+        <br><br> 
+    </section>
+
+    <!-- Section for platform partners -->
+    <section class="oogy">
+        <p>Platform Partners</p><br><br>
+         <!-- HackerRank -->
+        <div style="text-align: center;">
+            <a href="https://www.hackerrank.com/">
+                <img src="hackr.png" width="380px" height="100px">
+            </a>
+        </div>
+        
+    
+        
+
+
+      <!-- Section for FAQs -->
+<section class="olle" id="ley">
+  <p>FAQS</p><br><br>
+  <div class="mn">
+      <!-- FAQ entries -->
+      <button class="faq"><h11 style="font-weight: bolder;">ARE HACKATHONS FOR CODERS?</h11></button>
+      <div class="jack">
+          <p>Hackathon is for everyone who wants to learn things fast and build a website or its components in a limited time period.</p>
+      </div>
+
+
+      <button class="faq"><h10 style="font-weight: bolder;">HOW DO I REGISTER FOR THE EVENT</h10></button>
+      <div class="jack">
+          <p>Register through <a href="http://Kill keyboard.in" style="color:blue;text-shadow:none">Kill keyboard.in</a> and unstop through email id. </p>
+      </div>
+
+    
+      <button class="faq"><h12 style="font-weight: bolder;">DO WE SIGN UP AS INDIVIDUALS OR AS A TEAM</h12></button>
+      <div class="jack">
+          <p>You can register as an individual in the coding contest and as a team everywhere else. </p>
+      </div>
+
+    
+      <button class="faq"><h13 style="font-weight: bolder;">WHAT IS THE APPLICATION DEADLINE?</h13></button>
+      <div class="jack">
+          <p>The application deadline ends on the 15th of MAY. </p>          
+      </div>
+
+      
+      <button class="faq"><h14 style="font-weight: bolder;">WHO IS ELIGIBLE TO APPLY</h14></button>
+      <div class="jack">
+          <p>All the  students are eligible to apply. </p>
+      </div>
+
+     
+      <button class="faq"><h15 style="font-weight: bolder;">HOW MANY PEOPLE SHOULD A TEAM BE?</h15></button>
+      <div class="jack">
+          <p>A team should be between 1-3 people. If you don't have a team yet, you can still apply because you will have the chance to join a team. </p>
+      </div>
+
+     
+      <button class="faq"><h16 style="font-weight: bolder;">WHO WILL BE JUDGING?</h16></button>
+      <div class="jack">
+          <p>The judge panel composition will be announced closer to the date of the hackathon</p>
+      </div>
+
+    
+      <button class="faq"><h17 style="font-weight: bolder;">WHAT IS IN FOR ME?</h17></button>
+      <div class="jack">
+          <p>Learning new skills, looking good on your CV, networking, winning cash prizes, working as a team, meeting great people, having great food, and having fun!</p>
+      </div>
+
+     
+      <button class="faq"><h9 style="font-weight: bolder;">HOW CAN I GET INVOLVED?</h9></button>
+      <div class="jack">
+          <p>Go ahead and book your place. Have another question that didn't get answered here - send us an email at <a href="mailto:killkeyboard@gmail.com" style="text-shadow:none;">killkeyboard@gmail.com</a> or <a href="mailto:avats379@gmail.com" style="text-shadow:none;">avats379@gmail.com</a>.</p>
+      </div>
+
+     
+      <button class="faq"><h18 style="font-weight: bolder;">HOW ARE THE WINNERS SELECTED?</h18></button>
+      <div class="jack">
+          <p>There will be a jury selecting the winners with a rating system consisting of points (out of 10) for each factor: Implementability, financial benefits, presentation skills, and creativity.</p>
+      </div>
+
+     
+      <button class="faq"><h19 style="font-weight: bolder;">CAN WE USE ANY PROGRAMMING LANGUAGE?</h19></button>
+      <div class="jack">
+          <p>Yes, but with certain conditions for various different contests.</p>
+      </div>
+
+     
+      <button class="faq"><h20 style="font-weight: bolder;">IS THERE ANY PRIZE FOR THE WINNERS?</h20></button>
+      <div class="jack">
+          <p>Yes, we have cash prizes for the winners along with gifts and merchandise. (Terms and conditions apply)!</p>
+      </div>
+  </div>
+
+  <!-- JS for FAQ-->
+  <script>
+      var acc = document.getElementsByClassName("faq");
+      var i;
+      
+      for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+              this.classList.toggle("active");
+              var panel = this.nextElementSibling;
+              if (panel.style.maxHeight) {
+                  panel.style.maxHeight = null;
+              } else {
+                  panel.style.maxHeight = panel.scrollHeight + "px";
+              } 
+          }); 
+      }
+  </script>
+</section>
+
+    <!-- Horizontal line -->
+    <div class="line">
+        <hr style="color:azure">
+    </div>
+
+
+<!-- footer  -->
+    <footer>
+        <p style="color:white; display:flex;margin-left:10%">Have A Question?</p><br>
+        <div class="fotlo" style="display:flex;margin-left:10%">
+            <a href="mailto:killkeyboard@gmail.com" style="margin-right: 5px;"><img src="gmail.png" alt="" width="30px" height="30px"></a>
+            <a href="#" style="margin-right: 5px;"><img src="telegram.png" alt="" width="30px" height="30px"></a>
+            <a href="https://www.instagram.com/killkeyboard.ig/"><img src="instagram.png" alt="" width="30px" height="30px"></a>
+
+        </div>
+        <p style="color:white; display:flex;margin-left:10%">killkeyboard</p><br><br>
+        <p style="color:whitesmoke;margin-bottom:5%;">All Copyright © reserved to kill keyTEAM</p>
+    </footer>
+</body>
+</html>

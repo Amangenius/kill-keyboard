@@ -1,0 +1,35 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../progradope.github.io"
+		},
+		{
+			"path": "../../hjkl"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../../mymoon"
+		},
+		{
+			"path": "../../Javadev"
+		},
+		{
+			"path": "../Masterchef coding"
+		},
+		{
+			"path": "../../sportsant"
+		},
+		{
+			"path": "../../portfolio app"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "webdevprojet",
+		"git.ignoreLimitWarning": true
+	}
+}
